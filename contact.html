@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venue, Campus Map &amp; Contact | BBIT Magnus 2027</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="bbit-logo.png" alt="BBIT Official Logo" class="brand-logo">
+        <div class="brand-text">
+          <div class="brand-title">BBIT MAGNUS <span>2027</span></div>
+          <div class="brand-subtitle">Budge Budge Institute of Technology</div>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">&#127968; Home</a></li>
+          <li><a href="events.html">&#127942; Events</a></li>
+          <li><a href="food-fun.html">&#127828; Food &amp; Fun</a></li>
+          <li><a href="register.html">&#9997; Registration</a></li>
+          <li><a href="contact.html" class="active">&#128205; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" style="margin-bottom: 2rem;">
+      <h1 style="color: var(--text-main); margin-bottom: 0.5rem;">BBIT Campus Map, Venue &amp; Contact</h1>
+      <p style="color: var(--text-muted);">
+        Navigate our sprawling 20-acre lush green campus in Budge Budge using the interactive layout map below. 
+        Check precise Google Maps directions, transit routes, and connect with our fest hospitality committee.
+      </p>
+    </section>
+
+    <section class="card" style="margin-bottom: 2.5rem;">
+      <h2>Interactive 20-Acre BBIT Campus Layout (Image Map)</h2>
+      <p style="margin-bottom: 1rem; color: var(--text-muted);">
+        <em>Click directly on any designated zone on the map below (Main Ground, Food Carnival, Armageddon Arena, INNOV8 Labs) to explore:</em>
+      </p>
+
+      <div class="image-map-wrapper">
+        <img 
+          src="campus-map.png" 
+          alt="BBIT Magnus 2027 Campus Layout Map" 
+          usemap="#bbitcampusmap" 
+          width="800" 
+          height="500"
+        >
+
+        <map name="bbitcampusmap" id="bbitcampusmap">
+          <area 
+            shape="rect" 
+            coords="50,50,350,220" 
+            href="events.html" 
+            alt="Zone A: BBIT Main Ground &amp; Open Stage" 
+            title="Click to view BBIT Main Ground (Celebrity Concerts &amp; Cricket)"
+          >
+          <area 
+            shape="rect" 
+            coords="450,50,750,220" 
+            href="food-fun.html" 
+            alt="Zone B: Food Carnival &amp; Canteen Lawns" 
+            title="Click to view Food Court, Biryani, Kathi Rolls &amp; Stalls"
+          >
+          <area 
+            shape="rect" 
+            coords="50,280,350,450" 
+            href="events.html" 
+            alt="Zone C: Armageddon Esports Arena (LT-3 &amp; LT-4)" 
+            title="Click to view BGMI, Free Fire MAX &amp; Esports Tournaments"
+          >
+          <area 
+            shape="circle" 
+            coords="600,365,85" 
+            href="events.html" 
+            alt="Zone D: INNOV8 &amp; Central CS Labs" 
+            title="Click to view Hackathon, Robotics &amp; Tech Workshops"
+          >
+        </map>
+
+        <div class="map-legend">
+          <div class="legend-item">
+            <span class="legend-dot" style="background-color: #4f46e5;"></span>
+            <span>Zone A: Main Ground (Clickable)</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="background-color: #e11d48;"></span>
+            <span>Zone B: Food Carnival (Clickable)</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="background-color: #059669;"></span>
+            <span>Zone C: Armageddon Arena (Clickable)</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot" style="background-color: #d97706;"></span>
+            <span>Zone D: INNOV8 Labs (Clickable)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-zone-cards">
+        <a href="events.html" class="mobile-zone-card">
+          <span><span class="mobile-zone-badge" style="background:#4f46e5;"></span><strong>Zone A:</strong> Main Ground &amp; Mega Stage</span>
+          <span style="color:var(--primary); font-weight:700;">&rarr;</span>
+        </a>
+        <a href="food-fun.html" class="mobile-zone-card">
+          <span><span class="mobile-zone-badge" style="background:#e11d48;"></span><strong>Zone B:</strong> Food Carnival &amp; Stalls</span>
+          <span style="color:var(--primary); font-weight:700;">&rarr;</span>
+        </a>
+        <a href="events.html" class="mobile-zone-card">
+          <span><span class="mobile-zone-badge" style="background:#059669;"></span><strong>Zone C:</strong> Armageddon Esports Arena</span>
+          <span style="color:var(--primary); font-weight:700;">&rarr;</span>
+        </a>
+        <a href="events.html" class="mobile-zone-card">
+          <span><span class="mobile-zone-badge" style="background:#d97706;"></span><strong>Zone D:</strong> INNOV8 Labs &amp; Robotics</span>
+          <span style="color:var(--primary); font-weight:700;">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom: 2.5rem;">
+      <h2>Campus Geolocation &amp; Live Teaser</h2>
+      <p style="margin-bottom: 1.25rem; color: var(--text-muted);">
+        Accurate GPS location of Budge Budge Institute of Technology (BBIT) and our official Magnus fest concert highlights:
+      </p>
+
+      <div class="grid-2">
+        <div>
+          <h3 style="margin-bottom: 0.75rem;">BBIT Campus on Google Maps</h3>
+          <div class="iframe-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1561.1983035543572!2d88.17056384101295!3d22.458672453482286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f830fc6fffffff%3A0x880d852ade5959b!2sBudge%20Budge%20Institute%20of%20Technology!5e1!3m2!1sen!2sin!4v1793634528253!5m2!1sen!2sin" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="Budge Budge Institute of Technology (BBIT) Campus Location">
+            </iframe>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom: 0.75rem;">Magnus Star Night Highlights</h3>
+          <div class="iframe-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+              title="BBIT Magnus Official Concert &amp; Fest Highlights" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <article class="card">
+        <h2>Reach BBIT Magnus Secretariat</h2>
+        <p style="margin-bottom: 1rem;">
+          For tournament brackets, hostel accommodation, or sponsorship inquiries:
+        </p>
+        <p><strong>Campus Address:</strong><br>
+          Budge Budge Institute of Technology (BBIT)<br>
+          KP Mondal Road, Nischintapur, Budge Budge<br>
+          Kolkata, South 24 Parganas, West Bengal &ndash; 700137
+        </p>
+        <p style="margin-top: 1rem;">
+          <strong>Fest Central Hotline:</strong> +91 98300 12345 / +91 98300 67890<br>
+          <strong>Official Fest Email:</strong> fest@bbit.edu.in<br>
+          <strong>Hospitality &amp; Hostel Desk:</strong> accommodation@bbit.edu.in
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>How to Reach BBIT Campus</h2>
+        <ul class="fest-highlights">
+          <li><strong>By Local Train (Sealdah South):</strong> Board Budge Budge local from Sealdah / Majerhat to Budge Budge Station (BBT). Take an auto or Toto directly to BBIT Campus Gate (10 mins).</li>
+          <li><strong>By Bus:</strong> Route 77A from Esplanade / Taratala / Behala directly to Budge Budge. Auto services are available 24x7 from Taratala and Thakurpukur.</li>
+          <li><strong>By College Special Transit:</strong> 15+ special fest bus shuttles will run between Howrah Station, Ultadanga, Ruby Hospital, and BBIT Campus during all 4 fest days.</li>
+          <li><strong>Campus Parking:</strong> Secure on-campus 2-wheeler and 4-wheeler parking available inside the 20-acre complex.</li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <img src="bbit-logo.png" alt="BBIT Logo" style="height: 42px; background: white; border-radius: 4px; padding: 2px 6px;">
+          <div>
+            <h4 style="margin: 0; color: white;">BBIT Magnus 2027</h4>
+            <small style="color: #cbd5e1;">Budge Budge Institute of Technology</small>
+          </div>
+        </div>
+        <p>Budge Budge Institute of Technology &mdash; Flagship Inter-College Sports &amp; Cultural Extravaganza.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">KP Mondal Road, Nischintapur, Budge Budge, Kolkata - 700137</p>
+      </div>
+      <div class="footer-section">
+        <h4>Direct Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events Schedule</a></li>
+          <li><a href="food-fun.html">Food &amp; Fun</a></li>
+          <li><a href="register.html">Registration Form</a></li>
+          <li><a href="contact.html">Campus Map &amp; Venue</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Social Connections</h4>
+        <p>Follow live announcements, fixture draws, and celebrity line-ups:</p>
+        <p style="margin-top: 0.5rem;">
+          <a href="https://www.instagram.com/bbit_magnus/" target="_blank" rel="noopener noreferrer">@bbit_magnus</a> | 
+          <a href="https://bbit.edu.in" target="_blank" rel="noopener noreferrer">bbit.edu.in</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2027 Budge Budge Institute of Technology (BBIT). All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

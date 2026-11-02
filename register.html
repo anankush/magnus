@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration | BBIT Magnus 2027</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand-wrapper">
+        <img src="bbit-logo.png" alt="BBIT Official Logo" class="brand-logo">
+        <div class="brand-text">
+          <div class="brand-title">BBIT MAGNUS <span>2027</span></div>
+          <div class="brand-subtitle">Budge Budge Institute of Technology</div>
+        </div>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">&#127968; Home</a></li>
+          <li><a href="events.html">&#127942; Events</a></li>
+          <li><a href="food-fun.html">&#127828; Food &amp; Fun</a></li>
+          <li><a href="register.html" class="active">&#9997; Registration</a></li>
+          <li><a href="contact.html">&#128205; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" style="text-align: center; margin-bottom: 2rem;">
+      <h1 style="color: var(--text-main); margin-bottom: 0.5rem;">BBIT Magnus 2027 &mdash; Official Registration Portal</h1>
+      <p style="color: var(--text-muted); max-width: 650px; margin: 0 auto;">
+        Register your college delegation or participate individually in sports tournaments, 
+        cultural competitions, hackathons, or claim your celebrity star-night visitor pass!
+      </p>
+    </section>
+
+    <div class="form-container">
+      <form action="register.html" method="post" id="bbitRegistrationForm" onsubmit="event.preventDefault(); alert('Registration submitted successfully for BBIT Magnus 2027! A verification email with entry pass details has been dispatched.');">
+        
+        <div class="form-group">
+          <label for="fullName">Student Full Name <span style="color: var(--danger);">*</span></label>
+          <input 
+            type="text" 
+            id="fullName" 
+            name="fullName" 
+            class="form-control" 
+            placeholder="e.g., Sourav Ganguly" 
+            required 
+            minlength="3"
+            maxlength="60"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="studentEmail">Email Address <span style="color: var(--danger);">*</span></label>
+          <input 
+            type="email" 
+            id="studentEmail" 
+            name="studentEmail" 
+            class="form-control" 
+            placeholder="yourname@college.edu or gmail.com" 
+            required
+          >
+          <small style="color: var(--text-muted); font-size: 0.8rem;">Pass confirmation &amp; QR badge will be delivered here.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">WhatsApp / Mobile Number <span style="color: var(--danger);">*</span></label>
+          <input 
+            type="tel" 
+            id="phoneNumber" 
+            name="phoneNumber" 
+            class="form-control" 
+            placeholder="e.g., 9830012345" 
+            required 
+            pattern="[0-9]{10}"
+            title="Please enter a valid 10-digit mobile number"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="collegeName">College / Institute / University Name <span style="color: var(--danger);">*</span></label>
+          <input 
+            type="text" 
+            id="collegeName" 
+            name="collegeName" 
+            class="form-control" 
+            placeholder="e.g., Budge Budge Institute of Technology (BBIT)" 
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="department">Department / Academic Program <span style="color: var(--danger);">*</span></label>
+          <select id="department" name="department" class="form-control" required>
+            <option value="" disabled selected>-- Select Your Department --</option>
+            <option value="CSE">B.Tech - Computer Science &amp; Engineering (CSE)</option>
+            <option value="IT">B.Tech - Information Technology (IT)</option>
+            <option value="AI_ML">B.Tech - Artificial Intelligence &amp; Machine Learning (AIML)</option>
+            <option value="CYBER">B.Tech - Cyber Security</option>
+            <option value="ECE">B.Tech - Electronics &amp; Communication (ECE)</option>
+            <option value="EE">B.Tech - Electrical Engineering (EE)</option>
+            <option value="ME">B.Tech - Mechanical Engineering (ME)</option>
+            <option value="CE">B.Tech - Civil Engineering (CE)</option>
+            <option value="POLYTECHNIC">Diploma / Polytechnic (All Branches)</option>
+            <option value="MGMT">Management (MBA / BBA / BCA)</option>
+            <option value="JIMSH">JIMSH Medical / Nursing College</option>
+            <option value="OUTSTATION">External / Other College Student</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="eventSelect">Event / Tournament Selection <span style="color: var(--danger);">*</span></label>
+          <select id="eventSelect" name="eventSelect" class="form-control" required>
+            <option value="" disabled selected>-- Choose Your Tournament Bracket --</option>
+            <optgroup label="Idrott - Sports Tournaments">
+              <option value="cricket">Inter-College Cricket Cup (BBIT Main Ground) - &#8377;1500/Squad</option>
+              <option value="football">7-a-side Football Championship - &#8377;800/Squad</option>
+              <option value="basketball">Basketball 3v3 Tournament - &#8377;400/Team</option>
+              <option value="badminton">Badminton Singles &amp; Doubles - &#8377;150/Player</option>
+            </optgroup>
+            <optgroup label="Armageddon - Esports LAN">
+              <option value="bgmi">BGMI Squad Battle (LT-3 &amp; LT-4) - &#8377;250/Squad</option>
+              <option value="freefire">Free Fire MAX LAN Showdown - &#8377;200/Squad</option>
+              <option value="fifa">Console eFootball &amp; FIFA - &#8377;100/Player</option>
+            </optgroup>
+            <optgroup label="Renaissance - Cultural &amp; Music">
+              <option value="battle_bands">Battle of the Bands (Mega Stage) - &#8377;500/Band</option>
+              <option value="fashion_show">Couture Runway - Fashion Show - FREE</option>
+              <option value="dance_competition">Eastern &amp; Western Group Dance - FREE</option>
+              <option value="singing">Solo &amp; Duet Singing Contest - FREE</option>
+            </optgroup>
+            <optgroup label="INNOV8 - Technical &amp; Robotics">
+              <option value="hackathon">BBIT INNOV8 36-Hr Hackathon - &#8377;200/Team</option>
+              <option value="robowars">RoboStrike 15kg Robowars - &#8377;300/Bot</option>
+              <option value="gdg_workshop">GDG on Campus AI Workshop - &#8377;100</option>
+            </optgroup>
+            <optgroup label="General Fest Pass">
+              <option value="all_access_pass">Star Night &amp; Concert Delegate Pass - FREE (Student ID Required)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Gender <span style="color: var(--danger);">*</span></label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="other"> Other
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="prefer_not_say"> Prefer not to say
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="studyYear">Year of Study</label>
+          <select id="studyYear" name="studyYear" class="form-control">
+            <option value="1">1st Year (Freshman)</option>
+            <option value="2">2nd Year (Sophomore)</option>
+            <option value="3">3rd Year (Pre-Final Year)</option>
+            <option value="4">4th Year (Final Year)</option>
+            <option value="diploma">Diploma / Polytechnic</option>
+            <option value="pg">Post Graduate / MBA / MCA</option>
+          </select>
+        </div>
+
+        <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.6rem;">
+          <input type="checkbox" id="terms" name="terms" required style="accent-color: var(--primary); margin-top: 0.35rem; width: 1.1rem; height: 1.1rem;">
+          <label for="terms" style="font-size: 0.9rem; color: var(--text-muted); cursor: pointer;">
+            I agree to follow the BBIT campus discipline code, carry my college photo ID card at all times, and respect fest organizing decisions.
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" style="flex: 1;">
+            Submit BBIT Registration
+          </button>
+          <button type="reset" class="btn btn-reset" style="padding: 0.8rem 1.6rem;">
+            Reset Form
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    <section class="card" style="max-width: 780px; margin: 2rem auto 0;">
+      <h3>BBIT Magnus Regulations:</h3>
+      <ul class="fest-highlights" style="margin-top: 0.75rem;">
+        <li>All outstation teams must bring original college identity cards for hostel access.</li>
+        <li>For team sports (Cricket, Football, Kabaddi), squad rosters cannot be modified after fixture draw.</li>
+        <li>Entry into BBIT Main Ground during Celebrity Concert nights is strictly gated by digital QR pass.</li>
+        <li>Helpline desk for registration inquiries: <strong>fest@bbit.edu.in</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <img src="bbit-logo.png" alt="BBIT Logo" style="height: 42px; background: white; border-radius: 4px; padding: 2px 6px;">
+          <div>
+            <h4 style="margin: 0; color: white;">BBIT Magnus 2027</h4>
+            <small style="color: #cbd5e1;">Budge Budge Institute of Technology</small>
+          </div>
+        </div>
+        <p>Budge Budge Institute of Technology's Flagship Annual Sports &amp; Cultural Extravaganza.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem;">KP Mondal Road, Nischintapur, Budge Budge, Kolkata - 700137</p>
+      </div>
+      <div class="footer-section">
+        <h4>Portals</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events Schedule</a></li>
+          <li><a href="food-fun.html">Food &amp; Fun</a></li>
+          <li><a href="register.html">Fest Registration</a></li>
+          <li><a href="contact.html">Campus Map</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Registration Cell</h4>
+        <p>Email: register@bbit.edu.in</p>
+        <p>Phone: +91 98300 12345</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2027 Budge Budge Institute of Technology (BBIT). All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
