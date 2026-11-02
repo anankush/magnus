@@ -14,7 +14,7 @@ Developed as a laboratory assignment for the **Internet Technology** subject.
 
 ## 📌 Repository Information
 * **Remote Repository:** [https://github.com/anankush/magnus](https://github.com/anankush/magnus)
-* **Subject:** Internet Technology (CS / IT / Diploma Lab)
+* **Subject:** Internet Technology
 * **Academic Session:** 2026 – 2027
 
 ---
